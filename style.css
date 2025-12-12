@@ -1,0 +1,400 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+* a{
+    color:white;
+    text-decoration: none;
+}
+body{
+    background-color: black;
+}
+.mainNetflixContainer{
+    /* border: 2px solid red; */
+    /* padding:1rem 2rem; */
+    background-color: black;
+    position:relative;
+    
+}
+
+.backgroundContainer{
+    background-image: url("IN-en-20250303-TRIFECTA-perspective_8d2f60cf-007f-4f25-99b0-7c0b77f38bc1_large.jpg");
+    filter:blur(16px);
+    height:100vh;
+    position:relative;
+}
+
+.pinkoverlay{
+    background-color: rgba(69, 11, 21, 0.623);
+    height:100%;
+    width:100%;
+}
+
+.contentContainer{
+    position:absolute;
+    top:0;
+    background-color: rgba(0, 0, 0, 0.411);
+    padding:0rem 2rem;
+}
+nav{
+    /* border: 2px solid green; */
+    height:20vh;
+    position:fixed;
+    z-index:1000;
+   
+}
+
+.upperNavbar{
+    display:flex;
+    height:50%;
+}
+
+.upperNavbarLeft{
+    /* border: 2px solid blue; */
+    width:50%;
+}
+
+.logo{
+    width:28%;
+}
+
+.upperNavbarRight{
+    /* border: 2px solid black; */
+    width:50%;
+}
+
+.navbarButtonContainer{
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    height:100%;
+}
+
+.languageButton{
+    display:flex;
+    padding:0.5rem 0.8rem;
+    border-radius: 50px;
+    background: transparent;
+    border:1px solid white;
+    outline:none;
+    color:white;
+    font-size:1rem;
+
+}
+.languageButton svg{
+    margin-right:5px;
+}
+
+
+.signInButton{
+    background-color: #fff;
+    padding:0.5rem 0.8rem;
+    border-radius: 50px;
+    border:none;
+    outline:none;
+    color:black;
+    margin-left:10px;
+    cursor:pointer;
+    font-size:1rem;
+
+}
+
+.lowerNavbar{
+    /* border: 2px solid yellow; */
+    height:50%;
+    color:white;
+    display:flex;
+    justify-content: center;
+
+}
+
+.menuList{
+    /* border:2px solid white; */
+    box-shadow: 2px 3px 14px rgba(0, 0, 0, 0.5);
+    height:7vh;
+    width:40%;
+    list-style: none;
+    display:flex;
+    justify-content: space-evenly;
+    border-radius: 50px;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.902);
+    backdrop-filter: blur(10px);
+    text-decoration: none;
+}
+
+.sectionContainer{
+    margin-top:20vh;
+}
+.bannerSection{
+    border-top:2px solid rgba(64, 64, 64, 0.441);
+    border-left:2px solid rgba(64, 64, 64, 0.441);
+
+    height:90vh;
+    background-image: url("IN-en-20250303-TRIFECTA-perspective_8d2f60cf-007f-4f25-99b0-7c0b77f38bc1_large.jpg");
+    background-size: 100% 100%;
+    border-radius: 30px;
+    position:relative;
+}
+
+.overlay{
+    height:100%;
+    width:100%;
+    border-radius: 30px;;
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7));
+}
+
+.bannerContainer{
+    /* border:2px solid yellow; */
+    height:80%;
+    position:absolute;
+    bottom:0;
+    height:100%;
+    width:100%;
+    color:white;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.bannerContainer h2{
+    font-size: 4rem;
+    /* border:2px solid green; */
+    width:45%;
+    text-align: center;
+    font-weight: bold;
+}
+.bannerContainer h4{
+    font-size: 1.5rem;
+    margin: 20px 0px;
+}
+.bannerContainer p{
+    font-size: 1rem;
+    margin:20px;
+}
+
+.inputContainer{
+    /* border:2px solid red; */
+    width:35%;
+    display:flex;
+    justify-content: space-between;
+}
+.emailInputbox{
+    padding:1rem 3rem 1rem 1rem;
+    border-radius: 50px;
+    border:1px solid rgb(199, 194, 194);
+    outline:none;
+    width:61%;
+    background:rgba(255,255,255,0.2);
+}
+.emailInputbox::placeholder{
+    color:rgb(199, 194, 194);
+    font-size:1rem;
+
+}
+.getStartedButton{
+    width:37%;
+    background-color: red;
+    border-radius: 50px;
+    color:white;
+    font-weight: bold;
+    border:none;
+    outline:none;
+    font-size:1.2rem;
+}
+
+
+
+
+.carouselSection{
+    /* border:2px solid white; */
+    color:white;
+}
+.carouselSection h2{
+    /* border:2px solid white; */
+    margin-left:5rem;
+    font-size: 2.1rem;
+}
+.crouselCardContainer{
+    /* border:2px solid green; */
+    height:80%;
+    width:90%;
+    display:flex;
+    justify-content: space-evenly;
+    margin:2rem auto;
+}
+.crouselCard{
+    width:12%;
+    height:40vh;
+    /* border:20px solid yellow; */
+    position:relative;
+}
+.crouselImageContainer{
+    width:100%;
+    height:100%;
+
+    
+}
+.crouselImageContainer img{
+    width:100%;
+    height:100%;
+    border-radius: 20px;
+}
+.crouselNoContainer{
+    position: absolute;
+    left:-20px;
+}
+.crouselNoContainer span{
+    color:rgba(0,0,0,0.8);
+    -webkit-text-stroke: 0.125rem rgb(255,255,255);
+    text-shadow: 0 0 1.5rem rgba(0,0,0,0.5);
+    font-size: 4rem;
+    font-weight:800;
+}   
+
+.planSection h2{
+        /* border:2px solid white; */
+        margin-left:5rem;
+        font-size: 2.1rem;
+}
+
+.planSection{
+     /* border:2px solid white; */
+     color:white;
+}
+.planContainer{
+    /* border:2px solid green; */
+    height:80%;
+    width:90%;
+    display:flex;
+    justify-content: space-evenly;
+    margin:2rem auto;
+}
+.planCard{
+    border:2px solid rgba(255, 255, 255, 0.372);
+    height:38vh;
+    width:23%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding:2rem 1rem 1rem ;
+    border-radius: 20px;
+}
+.planCard h2{
+    margin-left:0;
+
+}
+.planCard1{
+    background:linear-gradient(149deg, #1c4072 6.96%, #172847 40.17%, #120c1f 73.39%);
+}
+.planCard2{
+    background:linear-gradient(149deg, #1D529D 6.96%, #233371 40.17%, #120c1f 73.39%);
+}
+.planCard3{
+    background:linear-gradient(149deg, #792A95 6.96%, #38216C 40.17% , #120c1f 73.39%);
+}
+.planCard4{
+    background:linear-gradient(149deg, #922556 6.96%, #391945 40.17%, #120c1f 73.39%);
+}
+.planCard h4{
+    font-size: 1.3rem;
+}
+.planCard h4{
+    font-size: 1rem;
+}
+
+.reasonToJoinSection , .FAQSection{
+    /* border:2px solid white; */
+    color:white;
+    width:100%;
+}
+.reasonToJoinSection h2, .FAQSection h2 {
+        /* border:2px solid white; */
+        margin-left:5rem;
+        font-size: 2.1rem;
+
+}
+.reasonContainer{
+     /* border:2px solid green; */
+     height:80%;
+     width:90%;
+     display:flex;
+     justify-content: space-evenly;
+     margin:2rem auto;
+}
+.reasonCard{
+    /* border:2px solid rgba(255, 255, 255, 0.372); */
+    height:33vh;
+    width:23%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding:2rem 1rem 1rem 1rem;
+    border-radius: 20px;
+    background-color: rgba(70, 68, 68, 0.418);
+}
+.reasonCard h2{
+    margin-left:0;
+    font-size:1.5rem;
+    /* margin-bottom:10px; */
+}
+.reasonCard p{
+    font-size: 0.9rem;
+    /* margin-bottom:6rem; */
+}
+
+.reasonCardLower {
+    display: flex;
+    justify-content: end;
+}
+.reasonCard svg{
+    height:50px;
+    width:50px;
+    text-align:end;
+}
+
+.faqCard{
+    /* border:2px solid red; */
+    margin-top:10px;
+}
+
+.faqCardContainer{
+    margin-left:5rem;
+    flex-direction: column;
+}
+.faqQuestion , .faqAnswer{
+    padding:2rem;
+    border-radius:10px;
+    margin-bottom:20px;
+    background-color: rgb(25, 24, 24);
+}
+.faqQuestion{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.faqQuestion span{
+    font-size: 2rem;
+    font-weight:100;
+}
+.faqAnswer{
+    display:none;
+}
+.faqCard:hover .faqAnswer{
+    display:block;
+    cursor:pointer;
+}
+
+.getStarted{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    color:white;
+    flex-direction: column;
+}
+.getStarted p{
+    margin-bottom: 1rem;
+}
